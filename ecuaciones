@@ -51,3 +51,19 @@ x2= ((-10)-(((10**2)-(4*1*24))**(1/2))/(2*1));
 
 console.log(x1);
 console.log(x2);
+
+
+--------------------------------------------
+var a = 1;
+var b = 10;
+var c = 24;
+var x1;
+var x2;
+
+x1 = (-b + Math.pow(Math.pow(b, 2) - 4 * a * c, 0.5)) / (2 * a);
+x2 = (-b - Math.pow(Math.pow(b, 2) - 4 * a * c, 0.5)) / (2 * a);
+
+console.log(x1);
+console.log(x2)
+
+
