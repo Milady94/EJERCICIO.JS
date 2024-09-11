@@ -52,7 +52,7 @@ x2= ((-10)-(((10**2)-(4*1*24))**(1/2))/(2*1));
 console.log(x1);
 console.log(x2);
 
-
+// Solución de ecauciones x1 y x2 en js
 --------------------------------------------
 var a = 1;
 var b = 10;
