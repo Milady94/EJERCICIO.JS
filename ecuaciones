@@ -1,3 +1,28 @@
+var a = 1;
+var b = 10;
+var c = 24;
+var x1;
+var x2;
+
+let caso;
+
+switch (caso)
+{
+     case 1:
+          x1 = (-b + Math.pow(Math.pow(b, 2) - 4 * a * c, (1/2))) / (2 * a);
+          console.log("x1 = "+x1);
+          break;
+
+     case 2: 
+          x2 = (-b - Math.pow(Math.pow(b, 2) - 4 * a * c, (1/2))) / (2 * a);
+          console.log("x2 = "+x2);
+          break;
+
+
+}
+
+
+
 /*Plantilla para el ejercicio de ecuaciones cuadráticas
 Autor :
 fecha: 10/09/2024
