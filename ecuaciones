@@ -53,7 +53,11 @@ let a=1;
 let b=10;
 let c=24;
 //valida que a sea diferente de cero! ...
-
+if (a !== 0) {
+    console.log("La variable a no es 0");
+} else {
+    console.log("La variable a es 0");
+}
 //termina de completar las ecuaciones dentro de los paréntesis
  
 x1= Math.pow(-(10x,2) +(10**(2))); //nota que aquí la expresión matemática tiene +
