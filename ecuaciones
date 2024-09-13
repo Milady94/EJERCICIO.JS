@@ -1,6 +1,4 @@
-let matriz = [ [2, 4, 6, 8],[10, 12, 14, 16],[18, 20, 22, 24],[26, 28, 30, 32] ]; 
-let fila = matriz.map(fila => fila.map (valor => valor + 5)); 
-console.log(fila);
+
 var a = 1;
 var b = 10;
 var c = 24;
