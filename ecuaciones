@@ -94,6 +94,108 @@ x1 = (-b + Math.pow(Math.pow(b, 2) - 4 * a * c, 0.5)) / (2 * a);
 x2 = (-b - Math.pow(Math.pow(b, 2) - 4 * a * c, 0.5)) / (2 * a);
 
 console.log(x1);
-console.log(x2)
+console.log(x2);
+
+
+
+
+_______________________________________________________________________________________________________-
+
+// Ejercicio 1
+let estudiantes = [
+    { nombre: 'Karol', nota: 75 },
+    { nombre: 'María', nota: 85 },
+    { nombre: 'Carlos', nota: 50 },
+    { nombre: 'Ana', nota: 65 },
+    { nombre: 'Luis', nota: 40 },
+    { nombre: 'Sofía', nota: 95 },
+    { nombre: 'Miguel', nota: 55 },
+    { nombre: 'Santiago', nota: 70 },
+    { nombre: 'José', nota: 80 },
+    { nombre: 'Laura', nota: 45 },
+    { nombre: 'Pedro', nota: 68 },
+    { nombre: 'Valentina', nota: 90 },
+    { nombre: 'Andrés', nota: 100 },
+    { nombre: 'Camila', nota: 88 },
+    { nombre: 'David', nota: 62 },
+    { nombre: 'Paula', nota: 72 },
+    { nombre: 'Alejandro', nota: 35 },
+    { nombre: 'Gabriela', nota: 78 },
+    { nombre: 'Mateo', nota: 82 },
+    { nombre: 'Isabella', nota: 92 }
+  ];
+  
+
+ let aprobados = estudiantes.filter(estudiante => estudiante.nota >= 60)  
+ //.map(estudiante => estudiante.nombre);       
+  
+ console.log(aprobados);
+
+ // Ejercicio 2
+
+let numeros = [71, 97, 73, 18, 93, 87, 96, 30, 15, 71, 60, 22, 53, 19, 97, 30, 60, 87, 39, 18, 71, 26, 73, 89, 45, 64, 74, 73, 45, 89, 19, 68, 26, 16, 16, 53, 85, 74, 96, 50, 67, 69, 72, 79, 60, 73, 44, 73, 99, 13 ];
+let dobles = numeros.filter(num => num % 2 === 0);
+let duplicado = dobles.map( paresx2 => paresx2 * 2);
+console.log(dobles);
+console.log(duplicado);
+*/
+// Ejercicio 3
+
+
+
+let productos = [
+    {name:" Vibrador recargable" ,Precio: 472702},
+{name:" Consolador clásico" ,Precio:340786},
+{name:" Anillo vibrador para parejas" ,Precio:108319},
+{name:" Lubricante a base de agua" ,Precio:234758},
+{name:" Lubricante de silicona" ,Precio:247156},
+{name:" Aceite de masaje comestible" ,Precio:454733},
+{name:" Lencería erótica" ,Precio:124035},
+{name:" Esposas con forro de peluche" ,Precio:131308},
+{name:" Plug anal" ,Precio:180640},
+{name:" Gel retardante para hombres" ,Precio:149166},
+{name:" Dildo de vidrio" ,Precio:358002},
+{name:" Vibrador con control remoto" ,Precio:171376},
+{name:" Arnés para doble penetración" ,Precio:101744},
+{name:" Bolas chinas" ,Precio:291625},
+{name:" Plug anal con cola" ,Precio:278402},
+{name:" Disfraz de enfermera" ,Precio:123763},
+{name:" Vibrador tipo bala" ,Precio:369613},
+{name:" Fusta de cuero" ,Precio:340838},
+{name:" Pinzas para pezones" ,Precio:184341},
+{name:" Masturbador masculino" ,Precio:296881},
+{name:" Gel de excitación femenina" ,Precio:451229},
+{name:" Vibrador de punto G" ,Precio:57716},
+{name:" Vibrador para parejas" ,Precio:202340},
+{name:" Plug anal con vibración" ,Precio:376543},
+{name:" Sábanas impermeables" ,Precio:312493},
+{name:" Dilatadores anales" ,Precio:274784},
+{name:" Collar y correa" ,Precio:151517},
+{name:" Succionador de clítoris" ,Precio:343870},
+{name:" Arnés con dildo" ,Precio:399469},
+{name:" Vibrador conejito" ,Precio:362950},
+{name:" Antifaz de satén" ,Precio:261393},
+{name:" Mordaza con bola" ,Precio:216800},
+{name:" Cinturón de castidad" ,Precio:340711},
+{name:" Pala de cuero" ,Precio:186308},
+{name:" Cuerda para bondage" ,Precio:140925},
+{name:" Set de plugs anales" ,Precio:426928},
+{name:" Vibrador con ventosa" ,Precio:138946},
+{name:" Vela de masaje" ,Precio:482790},
+{name:" Pastillas afrodisíacas" ,Precio:219902},
+{name:" Juegos eróticos de cartas" ,Precio:331900},
+];
+
+let descuento = productos.map( productos => productos.Precio *(0.90));
+console.log(descuento);
+let totalproductos = descuento.reduce((total, valor) => total + valor, 0);
+console.log("El valor total de los productos es de: "  + totalproductos);
+
+//Ejercicio 4 
+let matriz = [ [2, 4, 6, 8],[10, 12, 14, 16],[18, 20, 22, 24],[26, 28, 30, 32] ]; 
+let fila = matriz.map(fila => fila.map (valor => valor + 5)); 
+console.log(fila);
+
+
 
 
