@@ -1,0 +1,101 @@
+/* Suponga que un individuo desea invertir su capital en un 
+             * banco y desea saber cuánto dinero ganara después de 
+             * un mes si el banco paga a razón del 2% mensual
+
+
+            int Capital;
+            int Ganancia;
+
+            Console.WriteLine("Ingrese el capital a invertir");
+            Capital= int.Parse(Console.ReadLine());
+
+
+            // proceso 
+
+            Ganancia = Capital * 2 / 100;
+
+            //Datos de salida
+
+            Console.WriteLine("La ganancia es de: " + Ganancia);
+
+            Console.ReadKey();
+
+
+
+            /*2.	 Un vendedor recibe un sueldo base más un 10% extra 
+             * por comisión de sus ventas, el vendedor desea saber cuánto dinero obtendrá por 
+             * concepto de comisiones por las tres ventas realizadas en el mes y el total que 
+             * recibirá en el mes tomando en cuenta su sueldo y comisiones.
+
+
+            int sueldo;
+            int comision;
+            int venta1, venta2, venta3;
+            int total;
+
+            Console.WriteLine("Ingrese su sueldo");
+            sueldo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el valor de su primera venta");
+            venta1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el valor de su primera venta");
+            venta2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el valor de su primera venta");
+            venta3 = int.Parse(Console.ReadLine());
+
+            comision = (venta1 + venta2 + venta3) * 10 / 100;
+
+             total = comision + sueldo;
+
+            Console.WriteLine("Su sueldo es de: " + sueldo + " Su comisión a pagar es de : " + comision + " Para un total de ganancias en el mes de: " + total);
+            */
+
+
+            /* 5.	En una institución educativa se ha establecido un programa 
+             * para estimular a los aprendices con el costo de su matrícula teniendo 
+             * en cuenta el promedio de las asignaturas, tenga en cuenta los siguientes 
+             * requerimientos: El valor de la matrícula es de: $3500000. 
+             * Si el promedio obtenido por un aprendiz en el último periodo es mayor o 
+             * igual que 4.5, se le hará un descuento del 30% sobre la matrícula y 
+             * no se le cobrara IVA; si el promedio obtenido es menor que 4.5 deberá 
+             * pagar la matrícula completa, la cual incluye el 10% de IVA. 
+             * Obtener cuanto debe pagar un aprendiz.*/
+
+            // Variables de entrada 
+
+            int matricula = 3500000;
+            float promedio;
+            int descuento;
+            int iva;
+            int totalpagar;
+
+
+
+            //Datos de entrada 
+            Console.WriteLine("Ingrese su promedio");
+            promedio = float.Parse(Console.ReadLine());
+
+            //proceso
+
+            if (promedio >= 4.5)
+            {
+
+                descuento = matricula * 30 / 100;
+                iva = 0;
+
+            }
+            else {
+
+                descuento = 0;
+                iva = matricula * 10 / 100;
+                            
+            }
+
+
+            totalpagar = matricula - descuento + iva;
+
+            Console.WriteLine("Valor de la matricula es de: " + matricula);
+            Console.WriteLine("Valor su descuento es de: " + descuento);
+            Console.WriteLine("EL IVA a cobrar es de: " + iva);
+            Console.WriteLine("Valor a pagar es de: " + totalpagar);
+
