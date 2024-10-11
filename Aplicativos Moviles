@@ -1,0 +1,79 @@
+//Repaso C# para entender Operadores Logicos
+
+
+using System;
+
+namespace DispostivosMoviles
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int i;
+            int j = 3;
+            for (i = 0, Console.WriteLine($"Start: i={i}, j={j}"); i < j; i++, j--, Console.WriteLine($"Step: i={i}, j={j}"))
+            {
+                //...
+            }
+            // Output:
+            // Start: i=0, j=3
+            // Step: i=1, j=2
+            // Step: i=2, j=1
+
+            Console.Write("_________________________________________________\n");
+
+            int n = 0;
+            while (n < 5)
+            {
+                Console.Write(n);
+                n++;
+            }
+            // Output:
+            // 01234
+
+            Console.Write("\n_________________________________________________\n");
+
+            bool opc = true;
+            int na = 0;
+            while (opc)
+            {
+                Console.Write(na);
+                na++;
+                if (na == 4)
+                {
+                    Console.WriteLine(opc = !opc); // output: False
+                }
+            }
+            // Output:
+            // 0123False
+
+            Console.Write("\n_________________________________________________\n");
+
+            bool opcand = true;
+            bool opcand1 = true;
+            int nand = 0;
+            while (opcand & opcand1)
+            {
+                Console.Write(nand);
+                nand++;
+                if (nand == 6)
+                {
+                    Console.WriteLine(opcand = !opcand); // output: False // Rompe el ciclo por la negación del While
+                }
+            }
+            // Output:
+            // 0123False
+
+
+            Console.WriteLine(true ^ true); // output: False
+            Console.WriteLine(true ^ false); // output: True
+            Console.WriteLine(false ^ true); // output: True
+            Console.WriteLine(false ^ false); // output: False
+
+
+
+
+        }
+    }
+}
