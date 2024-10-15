@@ -51,6 +51,161 @@
             */
 
 
+/*3. Dada una cantidad en pesos, obtener la equivalencia en dólares, 
+      * asumiendo que la unidad bancaria es un dato desconocido. */
+
+int pesos;
+int dolares = 4200;
+int conversion;
+
+Console.WriteLine("Ingrese el COP a convertir a dolares");
+pesos = int.Parse(Console.ReadLine());
+
+conversion = pesos / dolares;
+
+Console.WriteLine("EL valor a convertir es de: $"+ pesos +"COP y el valor de conversion equivale a "+ conversion + "$  / dolares" );
+
+Console.ReadKey();
+
+/*4.	Calcular el nuevo salario de un obrero si obtuvo un incremento del 25% sobre su salario anterior.*/
+/*
+int sueldo;
+int nuevosueldo;
+
+Console.WriteLine("Ingrese su sueldo actual");
+sueldo = int.Parse(Console.ReadLine());
+
+
+nuevosueldo = sueldo * 25 / 100;
+
+int sueldototal = sueldo + nuevosueldo;
+
+Console.WriteLine("Su incremento de sueldo será de: $" + nuevosueldo + " Para un total de: $" + sueldototal);
+
+
+*/
+/*5. El dueño de la tienda compra un artículo a un precio determinado. 
+ * Obtener el precio en que lo debe vender para obtener una ganancia del 30%
+
+int compra;
+Double ganancia = 1.30;
+Double precioventa;
+
+Console.WriteLine("Ingrese el valor del producto");
+compra = int.Parse(Console.ReadLine());
+
+precioventa = compra * ganancia;
+
+Console.WriteLine("El precio de venta es de : $" +precioventa);
+
+
+int num1, num2, num3;
+
+Console.WriteLine("Ingrese el primero numero de preferencia");
+num1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese el segundo numero de preferencia");
+num2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese el tercer numero de preferencia");
+num3 = int.Parse(Console.ReadLine());
+
+
+if (num1 > num2 & num1 > num3)
+{
+    Console.WriteLine("El numero mayor es el primero digitado: " + num1);
+}
+else if (num2 > num1 & num2 > num3)
+{
+    Console.WriteLine("El numero mayor es el segundo digitado: " + num2);
+}
+else if (num3 > num1 & num3 > num2)
+{
+    Console.WriteLine("El numero mayor es el tercer digitado:" + num3);
+}
+
+Console.ReadKey();
+/*2.	Ingresar un número por teclado, determinar si el número es positivo negativo o neutro.*/
+
+/*
+double num;
+
+Console.WriteLine("Ingrese el numero de preferencia");
+num = int.Parse(Console.ReadLine());
+
+if (num == 0)
+{
+
+    Console.WriteLine("El numero es neutro");
+}
+else if (num > 0) {
+    Console.WriteLine("El numero es positivo");
+}
+else if (num < 0)
+{
+    Console.WriteLine("El numero es negativo");
+}
+
+/*3.	Realizar un algoritmo para determinar el total a pagar por una cantidad de lápices, 
+ * considerando que si se compran 1000 o más el costo por lápiz es de $150; de lo contrario, el precio por lápiz es de $250. */
+/*
+int cantlapices;
+int preciototal;
+int preciolapiz;
+
+Console.WriteLine("Cuantos lapices desea comprar?");
+cantlapices = int.Parse(Console.ReadLine());
+
+if (cantlapices >= 1000)
+{
+    preciototal = cantlapices * 150;
+    preciolapiz = 150;
+
+
+}
+else {
+
+    preciototal = cantlapices * 250;
+    preciolapiz = 250;
+
+}
+
+Console.WriteLine("La cantidad de lapices seleccionados es de: " + cantlapices + " para un total de: $"+ preciototal +" cada lapiz salió en: $" + preciolapiz);
+*/
+
+/*4.	Algoritmo que imprima el nombre de un artículo, clave, precio original y su precio con descuento. 
+ * El descuento lo hace en base a la clave, si la clave es 01 el descuento es del 10% y si la clave es 02 el descuento es del 20% (solo existen dos claves). */
+/*
+string nombreproducto;
+int clave;
+double precio;
+double descuento;
+
+
+Console.WriteLine("Ingrese los siguientes datos\n");
+
+Console.WriteLine("Nombre del producto");
+nombreproducto = Console.ReadLine();
+Console.WriteLine("Ingrese clave de uso");
+clave = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese el valor del producto");
+precio = Double.Parse(Console.ReadLine());
+
+if (clave == 1)
+{
+    descuento = precio - (precio * 0.10) ;
+    Console.WriteLine("El producto: "+ nombreproducto + " Con clave " +clave +" Tenía un precio de: "+ precio + " Pero recibió un descuento y el precio final es de "+ descuento);
+}
+else if (clave == 2)
+{
+    descuento = precio - (precio * 0.20) ;
+    Console.WriteLine("El producto: " + nombreproducto + " Con clave " + clave + " Tenía un precio de: " + precio + " Pero recibió un descuento y el precio final es de " + descuento);
+}
+
+*/
+
+
+
             /* 5.	En una institución educativa se ha establecido un programa 
              * para estimular a los aprendices con el costo de su matrícula teniendo 
              * en cuenta el promedio de las asignaturas, tenga en cuenta los siguientes 
