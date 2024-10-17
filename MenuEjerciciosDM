@@ -1,0 +1,436 @@
+using System;
+
+namespace ProyectomenuDM
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+
+                
+                Console.Clear();
+                Console.WriteLine("---------Menú----------\n");
+                Console.WriteLine("\nSeleccione el ejercicio de su prefrencia\n");
+                Console.WriteLine("0. Para salir del menu");
+                Console.WriteLine("1.  ejercicio ");
+                Console.WriteLine("2.  ejercicio ");
+                Console.WriteLine("3.  ejercicio ");
+                Console.WriteLine("4.  ejercicio ");
+                Console.WriteLine("5.  ejercicio ");
+                Console.WriteLine("6.  ejercicio ");
+                Console.WriteLine("7.  ejercicio ");
+                Console.WriteLine("8.  ejercicio ");
+                Console.WriteLine("9.  ejercicio ");
+                Console.WriteLine("10. ejercicio ");
+                Console.WriteLine("11. ejercicio ");
+                Console.WriteLine("12. ejercicio ");
+                
+
+                string input = Console.ReadLine();
+
+                if (input == "0") break;
+                
+
+
+                switch (input)
+                {
+                    case "1":
+                        Console.WriteLine("Ha seleccinado la opción número 1\n");
+
+                        /* Suponga que un individuo desea invertir su capital en un 
+                        banco y desea saber cuánto dinero ganara después de 
+                        un mes si el banco paga a razón del 2% mensual*/
+
+
+                        int Capital;
+                        int Ganancia;
+
+                        Console.WriteLine("Ingrese el capital a invertir");
+                        Capital = int.Parse(Console.ReadLine());
+
+
+                        // proceso 
+
+                        Ganancia = Capital * 2 / 100;
+
+                        //Datos de salida
+
+                        Console.WriteLine("La ganancia es de: " + Ganancia);
+
+                        Console.ReadKey();
+
+                        break;
+                    case "2":
+                        Console.WriteLine("Ha seleccinado la opción número 2\n");
+                        /*2. Un vendedor recibe un sueldo base más un 10% extra 
+                        por comisión de sus ventas, el vendedor desea saber cuánto dinero obtendrá por 
+                        concepto de comisiones por las tres ventas realizadas en el mes y el total que 
+                       recibirá en el mes tomando en cuenta su sueldo y comisiones.*/
+
+
+                        int sueldo;
+                        int comision;
+                        int venta1, venta2, venta3;
+                        int total;
+
+                        Console.WriteLine("Ingrese su sueldo");
+                        sueldo = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Ingrese el valor de su primera venta");
+                        venta1 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Ingrese el valor de su segunda venta");
+                        venta2 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Ingrese el valor de su tercera venta");
+                        venta3 = int.Parse(Console.ReadLine());
+
+                        comision = (venta1 + venta2 + venta3) * 10 / 100;
+
+                        total = comision + sueldo;
+
+                        Console.WriteLine("Su sueldo es de: " + sueldo + " Su comisión a pagar es de : " + comision + " Para un total de ganancias en el mes de: " + total);
+
+
+                        break;
+                    case "3":
+                        Console.WriteLine("Ha seleccinado la opción número 3\n");
+                        /*3. Dada una cantidad en pesos, obtener la equivalencia en dólares, 
+                        asumiendo que la unidad bancaria es un dato desconocido. */
+
+                        int pesos;
+                        int dolares = 4200;
+                        int conversion;
+
+                        Console.WriteLine("Ingrese el COP a convertir a dolares");
+                        pesos = int.Parse(Console.ReadLine());
+
+                        conversion = pesos / dolares;
+
+                        Console.WriteLine("EL valor a convertir es de: $" + pesos + "COP y el valor de conversion equivale a " + conversion + "$  / dolares");
+
+                        Console.ReadKey();
+
+                        break;
+                    case "4":
+                        Console.WriteLine("Ha seleccinado la opción número 4\n");
+                        /*4.	Calcular el nuevo salario de un obrero si obtuvo un incremento del 25% sobre su salario anterior.*/
+
+                        int sueldo4;
+                        int nuevosueldo;
+
+                        Console.WriteLine("Ingrese su sueldo actual");
+                        sueldo4 = int.Parse(Console.ReadLine());
+
+
+                        nuevosueldo = sueldo4 * 25 / 100;
+
+                        int sueldototal = sueldo4 + nuevosueldo;
+
+                        Console.WriteLine("Su incremento de sueldo será de: $" + nuevosueldo + " Para un total de: $" + sueldototal);
+
+
+                        break;
+                    case "5":
+                        Console.WriteLine("Ha seleccinado la opción número 5\n");
+                        /*5. El dueño de la tienda compra un artículo a un precio determinado. 
+                        Obtener el precio en que lo debe vender para obtener una ganancia del 30%*/
+
+                        int compra;
+                        Double ganancia = 1.30;
+                        Double precioventa;
+
+                        Console.WriteLine("Ingrese el valor del producto");
+                        compra = int.Parse(Console.ReadLine());
+
+                        precioventa = compra * ganancia;
+
+                        Console.WriteLine("El precio de venta es de : $" + precioventa);
+
+
+                        int num1, num2, num3;
+
+                        Console.WriteLine("Ingrese el primero numero de preferencia");
+                        num1 = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Ingrese el segundo numero de preferencia");
+                        num2 = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Ingrese el tercer numero de preferencia");
+                        num3 = int.Parse(Console.ReadLine());
+
+
+                        if (num1 > num2 & num1 > num3)
+                        {
+                            Console.WriteLine("El numero mayor es el primero digitado: " + num1);
+                        }
+                        else if (num2 > num1 & num2 > num3)
+                        {
+                            Console.WriteLine("El numero mayor es el segundo digitado: " + num2);
+                        }
+                        else if (num3 > num1 & num3 > num2)
+                        {
+                            Console.WriteLine("El numero mayor es el tercer digitado:" + num3);
+                        }
+
+                        Console.ReadKey();
+
+                        break;
+                    case "6":
+
+                        Console.WriteLine("Ha seleccinado la opción número 6\n");
+                        Console.WriteLine("Digite el primer número: ");
+                        int nume1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Ingresa el segundo número: ");
+                        int nume2 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Ingresa el tercer número: ");
+                        int nume3 = Convert.ToInt32(Console.ReadLine());
+
+                        // Encontrar el número mayor
+                        int mayor = nume1;
+
+                        if (nume2 > mayor)
+                        {
+                            mayor = nume2;
+                        }
+
+                        if (nume3 > mayor)
+                        {
+                            mayor = nume3;
+                        }
+
+                        // Mostrar el número mayor
+                        Console.WriteLine("El número mayor es: " + mayor);
+
+
+                        break;
+                    case "7":
+                        Console.WriteLine("Ha seleccinado la opción número 7");
+                        /*2. Ingresar un número por teclado, determinar si el número es positivo negativo o neutro.*/
+
+                        double num;
+
+                        Console.WriteLine("Ingrese el numero de preferencia");
+                        num = int.Parse(Console.ReadLine());
+
+                        if (num == 0)
+                        {
+
+                            Console.WriteLine("El numero es neutro");
+                        }
+                        else if (num > 0)
+                        {
+                            Console.WriteLine("El numero es positivo");
+                        }
+                        else if (num < 0)
+                        {
+                            Console.WriteLine("El numero es negativo");
+                        }
+                        break;
+                    case "8":
+                        Console.WriteLine("Ha seleccinado la opción número 8");
+
+                        /*3.	Realizar un algoritmo para determinar el total a pagar por una cantidad de lápices, 
+                        considerando que si se compran 1000 o más el costo por lápiz es de $150; de lo contrario, el precio por lápiz es de $250. */
+
+                        int cantlapices;
+                        int preciototal;
+                        int preciolapiz;
+
+                        Console.WriteLine("Cuantos lapices desea comprar?");
+                        cantlapices = int.Parse(Console.ReadLine());
+
+                        if (cantlapices >= 1000)
+                        {
+                            preciototal = cantlapices * 150;
+                            preciolapiz = 150;
+
+
+                        }
+                        else
+                        {
+
+                            preciototal = cantlapices * 250;
+                            preciolapiz = 250;
+
+                        }
+
+                        Console.WriteLine("La cantidad de lapices seleccionados es de: " + cantlapices + " para un total de: $" + preciototal + " cada lapiz salió en: $" + preciolapiz);
+
+                        break;
+                    case "9":
+                        Console.WriteLine("Ha seleccinado la opción número 9");
+                        /*Algoritmo que imprima el nombre de un artículo, clave, precio original y su precio con descuento. 
+                        El descuento lo hace en base a la clave, si la clave es 01 el descuento es del 10% y si la clave es 02 
+                        el descuento es del 20% (solo existen dos claves). */
+
+                        string nombreproducto;
+                        int clave;
+                        double precio;
+                        double descuento;
+
+
+                        Console.WriteLine("Ingrese los siguientes datos\n");
+
+                        Console.WriteLine("Nombre del producto");
+                        nombreproducto = Console.ReadLine();
+                        Console.WriteLine("Ingrese clave de uso");
+                        clave = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Ingrese el valor del producto");
+                        precio = Double.Parse(Console.ReadLine());
+
+                        if (clave == 1)
+                        {
+                            descuento = precio - (precio * 0.10);
+                            Console.WriteLine("El producto: " + nombreproducto + " Con clave " + clave + " Tenía un precio de: " + precio + " Pero recibió un descuento y el precio final es de " + descuento);
+                        }
+                        else if (clave == 2)
+                        {
+                            descuento = precio - (precio * 0.20);
+                            Console.WriteLine("El producto: " + nombreproducto + " Con clave " + clave + " Tenía un precio de: " + precio + " Pero recibió un descuento y el precio final es de " + descuento);
+                        }
+
+                        break;
+                    case "10":
+                        Console.WriteLine("Ha seleccinado la opción número 10");
+                        /*En una institución educativa se ha establecido un programa 
+                         * para estimular a los aprendices con el costo de su matrícula teniendo 
+                         * en cuenta el promedio de las asignaturas, tenga en cuenta los siguientes 
+                         * requerimientos: El valor de la matrícula es de: $3500000. 
+                         * Si el promedio obtenido por un aprendiz en el último periodo es mayor o 
+                         * igual que 4.5, se le hará un descuento del 30% sobre la matrícula y 
+                         * no se le cobrara IVA; si el promedio obtenido es menor que 4.5 deberá 
+                         * pagar la matrícula completa, la cual incluye el 10% de IVA. 
+                         * Obtener cuanto debe pagar un aprendiz.*/
+
+                        // Variables de entrada 
+
+                        int matricula = 3500000;
+                        float promedio;
+                        int descuento10;
+                        int iva;
+                        int totalpagar;
+
+
+                        //Datos de entrada 
+                        Console.WriteLine("Ingrese su promedio");
+                        promedio = float.Parse(Console.ReadLine());
+
+                        //proceso
+
+                        if (promedio >= 4.5)
+                        {
+
+                            descuento10 = matricula * 30 / 100;
+                            iva = 0;
+
+                        }
+                        else
+                        {
+
+                            descuento10 = 0;
+                            iva = matricula * 10 / 100;
+
+                        }
+
+
+                        totalpagar = matricula - descuento10 + iva;
+
+                        Console.WriteLine("Valor de la matricula es de: " + matricula);
+                        Console.WriteLine("Valor su descuento es de: " + descuento10);
+                        Console.WriteLine("EL IVA a cobrar es de: " + iva);
+                        Console.WriteLine("Valor a pagar es de: " + totalpagar);
+
+                        break;
+
+                    case "11":
+
+                        Console.WriteLine("Ha seleccinado la opción número 11");
+
+
+                        // Se establee un precio fijo del asiento
+                        const decimal precioAsiento = 45000;
+                        int cantidadEntradas;
+
+                        // Solicitar al cliente ingresar la cantidad de entradas que desea comprar
+                        Console.WriteLine("Ingrese la cantidad de entradas que desea comprar: ");
+
+                        while (true)
+                        {
+                            if (int.TryParse(Console.ReadLine(), out cantidadEntradas) && cantidadEntradas > 0) break;
+                            Console.WriteLine("Entrada no válida. Por favor, ingrese un número entero positivo.");
+                        }
+
+                        // Inicializar variables para llevar el total de descuentos por categoría
+                        decimal[] descuentosPorCategoria = new decimal[5];
+
+                        for (int i = 0; i < cantidadEntradas; i++)
+                        {
+                            Console.WriteLine($"Digite la edad del cliente {i + 1}: ");
+                            int edad;
+
+                            while (true)
+                            {
+                                if (int.TryParse(Console.ReadLine(), out edad)) break;
+                                Console.WriteLine("Entrada no válida. Por favor, ingrese una edad válida.");
+                            }
+
+                            // Determinar el descuento según la edad por medio de un if 
+                            if (edad < 5)
+                            {
+                                Console.WriteLine("Los niños menores de 5 años no pueden entrar al teatro.");
+                                i--; // No contar esta entrada
+                            }
+                            else if (edad >= 5 && edad <= 14)
+                            {
+                                descuentosPorCategoria[0] += precioAsiento * 0.35m; // 35%
+                            }
+                            else if (edad >= 15 && edad <= 19)
+                            {
+                                descuentosPorCategoria[1] += precioAsiento * 0.25m; // 25%
+                            }
+                            else if (edad >= 20 && edad <= 45)
+                            {
+                                descuentosPorCategoria[2] += precioAsiento * 0.10m; // 10%
+                            }
+                            else if (edad >= 46 && edad <= 65)
+                            {
+                                descuentosPorCategoria[3] += precioAsiento * 0.25m; // 25%
+                            }
+                            else // personas de 66 en adelante
+                            {
+                                descuentosPorCategoria[4] += precioAsiento * 0.35m; // 35%
+                            }
+                        }
+
+                        // Mostrar los resultados en pantalla
+                        Console.WriteLine("Los escuentos dejados de percibir por categoría son:");
+                        Console.WriteLine($"Categoría 1 (5-14 años): ${descuentosPorCategoria[0]}");
+                        Console.WriteLine($"Categoría 2 (15-19 años): ${descuentosPorCategoria[1]}");
+                        Console.WriteLine($"Categoría 3 (20-45 años): ${descuentosPorCategoria[2]}");
+                        Console.WriteLine($"Categoría 4 (46-65 años): ${descuentosPorCategoria[3]}");
+                        Console.WriteLine($"Categoría 5 (66 años en adelante): ${descuentosPorCategoria[4]}");
+                    ;
+
+                    default:
+                        Console.WriteLine("Opción no válida. Inténtelo de nuevo.");
+                        break;
+
+                }
+
+                Console.WriteLine("Presione cualquier tecla para continuar...");
+                Console.ReadKey();
+
+            }
+
+
+
+        }            
+
+
+
+    }
+}
+   
